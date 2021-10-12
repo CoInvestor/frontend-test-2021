@@ -1,0 +1,29 @@
+.users {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    padding-top: 75px;
+}
+
+.searchbar {
+    border: none;
+    padding: 10px 15px;
+    width: 350px;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 480px){
+    .user {
+        height: 300px;
+
+        &__link {
+            margin: 0px;
+            margin-bottom: 75px;
+        }
+    }
+
+    .user, .searchbar {
+        width: 300px;
+        min-width: 300px;  
+    }
+}

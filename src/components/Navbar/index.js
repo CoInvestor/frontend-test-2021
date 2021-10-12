@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import './styles.scss';
 
 const Navbar = () => (
-  <div className="nav">
+  <div className="nav fw">
     <ul className="nav-links">
       <li>
         <NavLink exact to="/" className="link">Home</NavLink>
