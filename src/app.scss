@@ -1,8 +1,65 @@
 .app {
+  min-height: 100%;
+  justify-content: flex-start !important;
   background-color: #eeeeee;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/*row, column, center*/
+.row,
+.col,
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.row,
+.col {
+  justify-content: space-evenly;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+}
+
+/*full-width, full-height*/
+.fw {
+  width: 100%;
+}
+
+.fh {
+  height: 100%;
+}
+
+/*page sections*/
+.page {
+  flex: 2;
+
+  &__section--small {
+    min-height: 250px;
+  }
+
+  &__section--medium {
+    min-height: 500px;
+  }
+
+  &__section--large {
+    min-height: 750px;
+  }
+}
+
+h1,h2,h3,h4,h5 {
+  text-align: center;
+}
+
+.link:hover {
+  transform: scale(1.05);
 }

@@ -1,0 +1,20 @@
+.user {
+    height: 350px;
+    width: 350px;
+    min-width: 350px;
+    padding: 0px 10px;
+    background-color: #2f3136;
+    border: 10px solid #cf0a49;
+    color: #fff;
+    white-space: normal;
+
+    &__link {
+        margin: 0px 50px;
+        margin-bottom: 75px;
+        text-decoration: none;
+    }
+
+    & h3 {
+        font-weight: 300;
+    }
+}
