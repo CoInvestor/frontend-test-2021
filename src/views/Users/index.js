@@ -1,25 +1,17 @@
-import React, { useEffect, useState } from 'react';
-
-import axios from 'axios';
-
-//import User from '../../components/User';
+import React from 'react';
+import User from '../../components/User';
+import useAxios from '../../useAxios';
 
 const Users = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  // custom axios hook
+  const {data, error, isLoading} = useAxios('https://jsonplaceholder.typicode.com/users')
 
-  useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/users')
-      .then(response => {
-        // grab this data / loop through and output individual User component for each object
-        console.log(response.data);
-      })
-      .catch(err => {
-        // Do something
-      })
-  }, []);
-
-  return isLoading && (
-     <h1>Loading...</h1>
+  return (
+    <div>
+     { isLoading && <h1>Loading...</h1>} 
+     { error && <div>{error }</div> }
+     <User data={data} />
+    </div>
   )
 }
 

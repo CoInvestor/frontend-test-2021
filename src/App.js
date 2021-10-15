@@ -5,6 +5,7 @@ import Users from './views/Users';
 import Navbar from './components/Navbar';
 
 import './app.scss';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/users" component={Users} />
+        <Route path="/:id" component={Profile} />
       </Switch>
     </div>
   );
