@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import styles from "./User.module.scss";
 
-const User = () => {
+const User = ({ data }) => {
   return (
-    <div>
-      <p>User</p>
+    <div className={styles.container}>
+      <div className={styles.container__user}>
+        {data.map((person) => (
+          <a href="">
+            <h4>{person.name}</h4>
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
