@@ -1,7 +1,3 @@
-import React from 'react';
+import User from "./User";
 
-const User = () => (
-  <></>
-)
-
-export default User;
+export default User
