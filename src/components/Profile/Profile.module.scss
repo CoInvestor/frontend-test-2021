@@ -1,0 +1,28 @@
+.profile {
+    text-align: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            margin-right: 10px;
+        }
+    }
+
+    button {
+        background: rgb(70, 52, 52);
+        color: #fff;
+        border: 0;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
